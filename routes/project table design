@@ -1,0 +1,112 @@
+
+course Table
+	$table->string('course_title')->unique;
+	$table->string('course_slug')->unique;
+	$table->string('lesson_no');
+	$table->string('image');
+	$table->text('course_des')->nullable();
+	$table->longtext('who_learn')->nullable();
+	$table->longtext('what_learn')->nullable();		
+	$table->string('lesson_title');
+	$table->string('lesson_slug')->unique;
+	$table->text('lesson_des');
+	
+Lesson Table
+
+	  $table->id();
+            $table->unsignedBigInteger('course_id');
+            $table->string('lesson_no');
+            $table->string('title');
+            $table->string('slug')->unique;
+            $table->text('short_des')->nullable();
+            $table->longtext('description');
+            $table->string('image');
+            $table->timestamps();
+            $table->timestamps();
+
+            $table->foreign('course_id')->references('id')->on('course');
+	
+	About Table
+			$table->id();
+            $table->string('hero_title');
+			$table->longtext('hero_des');
+			$table->longtext('hero_des_small');
+			$table->string('hero_image');
+			
+			
+			$table->string('round_first')->nullable();
+			$table->string('round_second')->nullable();
+			$table->string('round_third')->nullable();
+			
+			$table->longtext('sec_card_desc_one');
+			$table->longtext('sec_card_desc_two');
+			$table->longtext('sec_card_desc_three');
+			$table->longtext('sec_card_desc_four');
+			
+			$table->string('sec_title');
+			$table->longtext('sec_des');
+			$table->longtext('sec_des_small');
+			$table->string('sec_image');
+			
+			$table->string('quate_title');
+			$table->longtext('quate_des');
+			
+			
+			$table->string('author');
+            $table->string('title');
+            $table->longtext('description');
+            $table->string('image');
+            $table->timestamps();
+	
+
+  
+First I migrated the table to the database for the course table
+then I used the infiyom table generator for createing  course CRUD (Create Read Update Delete )
+Then I was able to generate a slug from the title
+
+
+Today I worked on the course page of the admin section. First I Fixed The image filed Properly on Create Read Update Delete.I have placed the All images of the course page inside the course name folder,after fixing some errors.
+
+Today I worked on the course section of the frontend .in home page course section is dynamically working,I imported some demo data and checked, and it is working properly.
+
+
+
+Welcome Section Description
+Resturent_project-3 no Class Welcome Section Design Html Css js
+Today we are going to design a Welcome section of our complete Restaurant Website Template using HTML, CSS, and a little bit of JS. This tutorial is for HTML & CSS practice and through this project, we will see how can we make many things like Title Design, Image Fit,Common CSS for buttons, and how to add images, and many more things to make a complete section.
+
+If you are thinking about what to do next after learning HTML and CSS then this tutorial would be best for you because you can do projects with them. So you need some practice for making websites and with this tutorial, you can make one of them. Therefore without any delay let's go and practice.
+
+
+Although the videos are a bit long, I have prepared a time schedule for each important task for your convenience.
+
+0:03 - Intro
+00:09 -Project View
+7:05 -How TO Use Common Css
+
+
+Thanks so much, everyone. stay well.
+
+
+Copy the code below and paste it onto every page of your website.
+Paste this code as high in the <head> of the page as possible:
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2R4W28');</script>
+<!-- End Google Tag Manager -->
+
+Additionally, paste this code immediately after the opening <body> tag:
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2R4W28"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CJS4P1BGY"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3CJS4P1BGY'); </script
+

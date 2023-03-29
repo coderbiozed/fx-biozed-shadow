@@ -1,0 +1,260 @@
+@include ('layouts.header')
+@include('layouts.big-banner')
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class='sec_top'>
+                        @foreach($demoContest as $contest)
+                        <h1 class='sec_head'><span class='br_sp'>{{$contest->title}}</span> <span
+                                class='c_lp'>!</span></h1>
+                                @endforeach
+                        <p class='sec_desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo labore
+                            officiis distinctio tempore magni dolor earum architecto dolorem odio et. Repudiandae vel
+                            explicabo
+                            laboriosam, nostrum voluptatibus ipsa earum deleniti amet corrupti. Cupiditate eius sequi
+                            repellat quae quisquam, est incidunt libero fugit corporis reprehenderit ipsum animi
+                            pariatur soluta
+                            recusandae minima nulla.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eius voluptate quibusdam
+                            ducimus, nulla officiis rem rerum, odit tempora minus, autem dolor eligendi repellendus
+                            cumque?</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class='top_te_br_ta_inn'>
+                        <table class='top_te_br_ta'>
+                            <thead>
+                            <tr>
+                                <th colSpan="2"><h5 class='m-0 c_lg'>{{$contest->title}}</h5></th>                  
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><strong>Link</strong></td>
+                                <td><a href='' target="_blank" class='td_vi_si_a'>{{$contest->link}}</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prize fund</strong></td>
+                                <td>{{$contest->prize_fund}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>No of places</strong></td>
+                                <td>{{$contest->no_of_places}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contest duration</strong></td>
+                                <td>{{$contest->contest_duration}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Status</strong></td>
+                                <td>{{$contest->status}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>No of participants</strong></td>
+                                <td>{{$contest->no_of_participants}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Terms and conditions</strong></td>
+                                <td>Check out the full list of conditions <a href='{{$contest->link}}' target="_blank" class='td_vi_si_a'> here</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec_default">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class='sec_top'>
+                        <h2 class='sec_head'><span class='br_sp'>How</span> to participate<span class='c_lp'>!</span></h2>
+                        <p class='sec_desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo labore
+                            officiis distinctio tempore magni dolor earum architecto dolorem odio et. Repudiandae vel
+                            explicabo
+                            laboriosam, nostrum voluptatibus ipsa earum deleniti amet corrupti. Cupiditate eius sequi
+                            repellat quae quisquam, est incidunt libero fugit corporis reprehenderit ipsum animi
+                            pariatur soluta
+                            recusandae minima nulla.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class='inst_ca'>
+                        <h4>Open an account
+                            <i class="fa-solid fa-arrow-right-long c_lp"></i>
+                        </h4>
+                        <p>opening an account is an important step towards managing your finances and achieving your financial goals.</p>
+                        <span class='c_lg'>1</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class='inst_ca'>
+                        <h4>Make a deposit
+                            <i class="fa-solid fa-arrow-right-long c_lp"></i>
+                        </h4>
+                        <p>Once you've made a deposit, the funds will typically be available for you to use within a few business days. You can then start investing in the assets you're interested in, taking into account your investment goals and risk tolerance.</p>
+                        <span class='c_lg'>2</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class='inst_ca'>
+                        <h4>Increase your deposit
+                            <i class="fa-solid fa-arrow-right-long c_lp"></i>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, corrupti placeat adipisci
+                            ipsam nostrum deserunt ullam architecto consequatur.</p>
+                        <span class='c_lg'>3</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class='inst_ca'>
+                        <h4>Withdraw bonus fund
+                            <i class="fa-solid fa-arrow-right-long c_lp"></i>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, corrupti placeat adipisci
+                            ipsam nostrum deserunt ullam architecto consequatur.</p>
+                        <span class='c_lg'>4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec_default">
+        <div class="po_inn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class='sec_top'>
+                            <h2 class='sec_head'><span class='br_sp'>Multiple</span> payment options<span
+                                    class='c_lp'>!</span></h2>
+                            <p class='sec_desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo labore
+                                officiis distinctio tempore magni dolor earum architecto dolorem odio et. Repudiandae
+                                vel explicabo
+                                laboriosam, nostrum voluptatibus ipsa earum deleniti amet corrupti. Cupiditate eius
+                                sequi repellat quae quisquam, est incidunt libero fugit corporis reprehenderit ipsum
+                                animi pariatur soluta
+                                recusandae minima nulla.</p>
+                        </div>
+                    </div>
+                    <div class='bon_sli owl-theme owl-carousel'>
+                        <div class="item">
+                            <img src="{{asset('assets')}}/icons-svg/bank.png" alt="img" />
+                            <h4>local online banking</h4>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{asset('assets')}}/icons-svg/visa_mastercard.png" alt="img" />
+                            <h4>visa/Master card</h4>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{asset('assets')}}/icons-svg/wire_transfer.png" alt="img" />
+                            <h4>wire transfer</h4>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{asset('assets')}}/icons-svg/swift.png" alt="img" />
+                            <h4>swift</h4>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{asset('assets')}}/icons-svg/Skrill.png" alt="img" />
+                            <h4>skrill</h4>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{asset('assets')}}/icons-svg/Netler.png" alt="img" />
+                            <h4>neteller</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sec_default">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class='sec_top'>
+                        <h2 class='sec_head'><span class='br_sp'>Contest</span> FAQ<span class='c_lp'>!</span></h2>
+                        <p class='sec_desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo labore
+                            officiis distinctio tempore magni dolor earum architecto dolorem odio et. Repudiandae vel
+                            explicabo
+                            laboriosam, nostrum voluptatibus ipsa earum deleniti amet corrupti. Cupiditate eius sequi
+                            repellat quae quisquam, est incidunt libero fugit corporis reprehenderit ipsum animi
+                            pariatur soluta
+                            recusandae minima nulla.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class='bon_faqs'>
+                        <div>
+                            <div>
+                                <h4 class='c_lg'>1.</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Who is eligible to claim the deposit bonus<span class='c_lp'>?</span></h4>
+                            <p class="m-0">Any MTrading customer with an M.Premium account, either new or existing. Lorem, ipsum
+                                dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class='bon_faqs'>
+                        <div>
+                            <div>
+                                <h4 class='c_lg'>2.</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>What to do if the bonus expires<span class='c_lp'>?</span></h4>
+                            <p class="m-0">No worries, claim it again! You can do it as many times as you want. Lorem, ipsum dolor
+                                sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class='bon_faqs'>
+                        <div>
+                            <div>
+                                <h4 class='c_lg'>3.</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Can I use wire transfer for depositing<span class='c_lp'>?</span></h4>
+                            <p class="m-0">Yes. In this case, please notify your account manager via e-mail after the account has
+                                been funded.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class='bon_faqs'>
+                        <div>
+                            <div>
+                                <h4 class='c_lg'>4.</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>How can I keep the bonus<span class='c_lp'>?</span></h4>
+                            <p class="m-0">You should get the bonus rules fulfilled. Please read Terms and Conditions for more
+                                information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+@include ('layouts.footer')

@@ -1,0 +1,53 @@
+
+course Table
+	$table->string('course_title')->unique;
+	$table->string('course_slug')->unique;
+	$table->string('lesson_no');
+	$table->string('image');
+	$table->text('course_des')->nullable();
+	$table->longtext('who_learn')->nullable();
+	$table->longtext('what_learn')->nullable();		
+	$table->string('lesson_title');
+	$table->string('lesson_slug')->unique;
+	$table->text('lesson_des');
+	
+Lesson Table
+
+	  $table->id();
+            $table->unsignedBigInteger('course_id');
+            $table->string('lesson_no');
+            $table->string('title');
+            $table->string('slug')->unique;
+            $table->text('short_des')->nullable();
+            $table->longtext('description');
+            $table->string('image');
+            $table->timestamps();
+            $table->timestamps();
+
+            $table->foreign('course_id')->references('id')->on('course');
+	
+	About Table
+			$table->id();
+            $table->string('hero_title');
+			$table->longtext('hero_des');
+			$table->longtext('hero_des_small');
+			$table->string('hero_image');
+			
+			
+			$table->string('round_first');
+			$table->string('round_second');
+			$table->string('round_third');
+			$table->string('author');
+            $table->string('title');
+            $table->longtext('description');
+            $table->string('image');
+            $table->timestamps();
+	
+
+  
+First I migrated the table to the database for the course table
+then I used the infiyom table generator for createing  course CRUD (Create Read Update Delete )
+Then I was able to generate a slug from the title
+
+
+
